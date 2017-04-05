@@ -1,0 +1,94 @@
+@font-face  {
+	font-family: Iosevka;
+	src: url(/fonts/iosevka-regular.ttf);
+}
+
+@keyframes fadein {
+    from 	{ opacity: 0; margin-left: 40px; }
+    to 		{ opacity: 1; margin-left: 50px; }
+}
+
+@keyframes fadeout {
+    from	{ opacity: 1; margin-left: 50px; }
+    to 		{ opacity: 0; margin-left: 40px; }
+}
+
+.container {
+	margin-top: 75px;
+	margin-left: 50px;
+	width: 720px;
+    
+	opacity: 0;
+
+    font-size: 16px;
+    font-family: Iosevka, monospace;
+    
+	animation: fadein 0.5s forwards;
+}
+
+.fade-out {
+	animation: fadeout 0.5s forwards;
+}
+
+input {
+	font-family: Iosevka;
+	border: none;
+	border-bottom: 1px solid black;
+	outline: none;
+	font-size: 16px;
+	margin-left: 8px;
+	box-sizing: border-box;
+	padding-bottom: 8px;
+}
+
+input[type=submit] {
+	border: 1px solid black;
+	background: none;
+}
+
+*[disabled] {
+	color: inherit;
+	background: inherit;
+}
+
+textarea {
+	background: none;
+	border: none;
+	font-family: Iosevka;
+	padding: 0;
+	outline: none;
+	margin-top: 8px;
+	padding-left: 8px;
+	font-size: 16px;
+	box-sizing: border-box;
+    resize: none;
+    overflow: hidden;
+    height: auto;
+}
+
+p {
+	margin: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: #009bff;
+}
+
+h1 {
+	font-size: 2em;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.bar {
+	font-family: Iosevka;
+	font-size: 12px;
+
+	margin-top: 50px;
+	margin-left: 50px;
+	border-top: 1px solid #eee;
+	width: 720px;
+
+	padding: 10px;
+}
